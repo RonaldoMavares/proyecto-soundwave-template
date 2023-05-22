@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--BASICS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--MOBILE METAS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META INFORMATION-->
+    <meta name="keywords" content="music, artists, pop">
+    <meta name="description" content="On this webside, you can listen to your favorite artists">
+    <meta name="author" content="Ronaldo">
+    <!--links-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!--Tittle-->
+    <title>Soundwave</title>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <a href="index.html"> <img src="images/2.png" class="logo-soundwave" alt="Logo soundwave"></a>
+            <nav>
+                <ul>
+                    <li><a href="premium.html">Premium</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <li><a href="descargar.html">Descargar</a></li>
+                    <li class="navegation"><a href="registrarse.html">Registrarse</a></li>
+                    <li>
+                        <button class="login_btn" onclick="window.location.href='login.html'">
+                            <img class="img1" src="Images/login.png" alt="Imagen login" width="30px">
+                            <img class="img2" src="Images/login2.png" alt="Imagen login blanco" width="30px">
+                            <span class="login_txt">Ingresar</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="imagen_principal">
+            <img src="Images/3.png" class="imagen_principal" alt="Imagen persona escuchando música">
+        </h1>
+        <section class="contenido-principal">
+            <h2>Música que amas,<br> desde tu comodidad</h2>
+            <p>Disfruta sin anuncios, con música ilimitada, sin internet y más<br>por tan solo 25.000COP al mes. Puedes cancelar el<br>servicio cuando quieras</p>
+        </section>
+        <section class="eslogan">
+            <h2>Descubre lo nuevo de la música,<br> lo nuevo en <b>SOUNDWAVE</b></h2>
+            <p><b>¡Viaja a otro mundo con un solo Play!</b> Ponte al tanto de lo último de la música y consigue aquella melodía que combina con tu estilo.</p>
+            <button>Navegar</button>
+        </section>
+        <section class="suscripcion">
+            <h2>Escucha <b>GRATIS</b> o susbríbete con <b>SOUNDWAVE PREMIUM</b></h2>
+            <div class="container">
+                <div class="suscripciongratis">
+                    <h3>Te presentamos <br>SOUNDWAVE GRATIS</h3>
+                    <ul>
+                        <li>Reproducción aleatoria de cualquier artista o playlist en tu teléfono celular.</li>
+                        <li>Escuchar música es posible gracias a los anuncios.</li>
+                        <li>Puedes pasar 10 veces la música en tu celular.</li>
+                        <li>Calidad de sonido estándar.</li>
+                    </ul>
+                    <button>IR GRATIS</button>
+                </div>
+                <div class="suscripcionpremium">
+                    <h3>Te presentamos <br>SOUNDWAVE PREMIUM</h3>
+                    <ul>
+                        <li>Escuchar la canción que desees al momento, sin aleatoriedad.</li>
+                        <li>Escucha música sin internet.</li>
+                        <li>Escuchar música sin anuncios.</li>
+                        <li>Puedes saltar la música tantas veces como quieras.</li>
+                        <li>Calidad de sonido mejorada.</li>
+                        <li>Escucha música a través de tus altavoces.</li>
+                    </ul>
+                    <button>IR PREMIUM</button>
+                </div>
+            </div>
+        </section>
+        <section class="form-fondo">
+            <div class="form-contacto">
+                <h2>¿Posees dudas sobre nuestro servicio? <br>¡CONTACTANOS!</h2>
+                <div class="container-form">
+                    <form action="enviar.php" method="post" class="contacto">
+                        <label for="nombreapellido">Nombre y Apellido</label><br>
+                        <input type="text" id="nombreapellido" class="input-padron" required><br>
+                        <label for="correo">Correo electrónico</label><br>
+                        <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com" required><br>
+                        <label for="telefono">Teléfono</label><br>
+                        <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxxx xxxx" required><br>
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" class="input-padron" required></textarea><br>
+                        <fieldset class="form-selectors">
+                            <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>              
+                            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>              
+                            <label for="radio-whatsApp"><input type="radio" name="contacto" value="whatsApp" id="radio-whatsApp" checked>WhatsApp</label>         
+                        </fieldset>
+                        <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades sobre Soundwave?</label>
+                        <input type="submit" value="Enviar" class="enviar">
+                    </form>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7003683899356!2d-99.20785461114501!3d19.425348000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f72729f007%3A0x178597e77d964c04!2sSpotify%20Mexico!5e0!3m2!1ses!2sco!4v1684697245783!5m2!1ses!2sco" class="mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="Images/Footer.png" alt="Logo soundwave footer">
+        <p class="copyright">&copy Copyright SoundWave - 2023</p>
+    </footer>
+</body>
+</html>
